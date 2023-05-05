@@ -1,352 +1,305 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>에뛰드</title> 
+  <title>서민희 포트폴리오</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <!-- 구글 폰트 -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Hebrew:wght@600&display=swap" rel="stylesheet">
+  <!-- 외부파일 연결 -->
+  <link rel="shortcut icon" href="img/favicon_sun.ico" />
   <link rel="stylesheet" href="css/style.css">
-  <link  rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
-  <script defer src="js/jquery-3.6.3.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-  <script defer src="js/script.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+  <script defer src="js/script.js"></script> 
 </head>
 <body>
+  <!-- 로딩 이미지 -->
+  <div id="loadingImage">
+    <div class="box box1"></div>
+    <div class="box box2"></div>
+  </div>
+  <!-- header -->
   <header class="header_wrap">
     <div class="header">
-      <div class="h_top">
-        <a href="#"><img src="img/img_logo03-1.png" alt=""></a>
-        <ul class="menu">
-          <li><a href="#">PRODUCT</a></li>
-          <li><a href="#">BRAND</a></li>
-          <li><a href="#">LIMITED</a></li>
-          <li><a href="#">STORY</a></li>
-          <li><a href="#">EVENT</a></li>
-        </ul>
-        <ul class="menu_icon">
-          <li><a href="#"><img src="img/login_icon.png" alt=""></a></li>
-          <li><a href="#"><img src="img/cart_icon.png" alt=""></a></li>
-          <li><a href="#"><img src="img/search_icon.png" alt=""></a></li>
-          <li><a href="#"><img src="img/bar_icon.png" alt=""></a></li>
-        </ul>
-      </div>
+      <ul class="mymenu">
+        <div id="horizontal-underline"></div> 
+        <li><a href="#intro_pg" >Intro</a></li>
+        <li><a href="#profile_pg" >About</a></li>
+        <li><a href="#web_pg" >Web</a></li>
+        <li><a href="#clone_pg" >Clone</a></li>
+        <li><a href="#design_pg" >Design</a></li>
+      </ul>
     </div>
   </header>
-  <main class="main">
-    <div class="swiper-container">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide">
-          <a href="#"><img src="img/mainSlide1.jpg" alt=""></a>
-          <p>무한 조합 퍼스널 컬러 팔레트</p>
-          <p>올리브영 단독 기획세트 런칭</p>
+  <main class="main"> 
+    <!-- 인트로 페이지 -->
+    <article id="intro_pg">
+      <div class="intro_wrap"> 
+        <!-- intro_txt -->
+        <div class="intro_txt">
+          <p><span>S</span>EO<br>MINHEE'S</p>
+          <strong>PORTFOLIO</strong>
+          <img src="img/intro_bg.png" alt="">
         </div>
-        <!-- slide 1 -->
-        <div class="swiper-slide">
-          <a href="#"><img src="img/mainSlide2.jpg" alt=""></a>
-          <p>양 볼에 빛나는 자연광 블러셔</p>
-          <p>올리브영 단독 기획세트 런칭</p>
-        </div>
-        <!-- slide 2 -->
-        <div class="swiper-slide">
-          <a href="#"><img src="img/mainSlide3.jpg" alt=""></a>
-          <p>7년 연속 1위! 컬링 마스카라</p>
-          <p>올리브영 단독 기획세트 런칭</p>
-        </div>
-        <!-- slide 3 -->
-        <div class="swiper-slide">
-          <a href="#"><img src="img/mainSlide4.jpg" alt=""></a>
-          <p>NEW 촉촉 수분 글로잉 틴트</p>
-          <p>올리브영 단독 런칭</p>
-        </div>
-        <!-- slide 4 -->
-        <div class="swiper-slide">
-          <a href="#"><img src="img/mainSlide5.jpg" alt=""></a>
-          <p>NEW 순정 네이버 단독 론칭</p>
-          <p>선착순 사은품 증정</p>
-        </div>
-        <!-- slide 5 -->
-        <div class="swiper-slide">
-          <a href="#"><img src="img/mainSlide6.jpg" alt=""></a>
-          <p>조효진 개발! 그림자 쉐딩</p>
-          <p>음영 메이크업 강자로 재.조.명</p>
-        </div>
-        <!-- slide 6 -->
-        <div class="swiper-slide">
-          <a href="#"><img src="img/mainSlide7.jpg" alt=""></a>
-          <p>BT21 프라이빗 뉴이어 파티</p>
-          <p>2023 새해 한정 BT21 스페셜 에디션</p>
-        </div>
-        <!-- slide 7 -->
-        <div class="swiper-slide">
-          <a href="#"><img src="img/mainSlide8.jpg" alt=""></a>
-          <p>순정 디렉터 선크림</p>
-          <p>#디렉터파이 공동개발 #자차검증 #저자극</p>
-        </div>
-        <!-- slide 8 -->
-      </div>
-      <!-- swiper-wrapper -->
-      <div class="swiper-button-prev"></div>
-      <div class="swiper-button-next"></div>
-      <div class="swiper-pagination"></div>
-    </div>
-    <!-- swiper-container --> 
-    <section class="search_wrap">
-      <div class="search">
-        <h2>핫한 검색어</h2>
-        <div class="search_item">
-          <a>1 <span>선크림</span></a>
-          <a>2 <span>픽서</span></a>
-          <a>3 <span>수분크림</span></a>
-          <a>4 <span>클렌징오일</span></a>
-          <a>5 <span>마스카라</span></a>
-          <a>6 <span>틴트</span></a>
-          <a>7 <span>섀도우</span></a>
-          <a>8 <span>미스트</span></a>
-          <a>9 <span>샴푸</span></a>
-          <a>10 <span>아이라이너</span></a>
-        </div>
-      </div>
-    </section>
-    <section class="best_item">
-      <div class="con_title">
-        <img src="img/free-icon-crown-711138.png" alt="">
-        <h2>Best Item</h2>
-      </div>
-      <!-- con_title -->
-      <div class="item_img">
-        <a href="#"><img src="img/0125-Fixing_Tint-9.png" alt="">
-          <p>픽싱틴트</p>
-          <p>12,000원</p>
-        </a>
-        <a href="#"><img src="img/EyePalette.png" alt="">
-          <p>플레이 톤 아이 팔레트</p>
-          <p>30,000원</p>
-        </a>
-        <a href="#"><img src="img/0261-D.L.Foundation_Vcover-9.png" alt="">
-          <p>더스 래스팅 비건 커버 파운데이션</p>
-          <p>29,000원</p>
-        </a>
-        <a href="#"><img src="img/0137-Contour_Powder-9.png" alt="">
-          <p>그림자 쉐딩</p>
-          <p>20,000원</p>
-        </a>
-        <a href="#"><img src="img/0175-Curl_Fix_Mascara-9.png" alt="">
-          <p>컬 픽스 마스카라</p>
-          <p>15,000원</p>
-        </a>
-      </div>
-      <!-- item_img -->
-    </section>
-    <section class="makeup_look_wrap"> 
-      <div class="makeup_look">
-        <div class="article_title">
-          <img src="img/makeuplook-icon.png" alt="">
-          <p>Makeup Look</p>
-          <p>지금 나에게 어울리는 메이크업 룩은?</p>
-          <button class="button">View more</button>
-        </div>
-        <!-- title -->
-        <div class="look_item">
-          <a href="#"><img src="img/look_img1.jpg" alt="">
-            <p>소프트 뮤트 어텀</p>
-            <p>#차분 #분위기</p>
+        <!-- scroll_down -->
+        <div class="scroll_down"></div>   
+        <!-- qr -->
+        <div class="qr">
+          <a href="https://open.kakao.com/o/ssXfQFef?rt=O009" target="_blank">
+            <img src="img/qr.png" alt="QR코드">
           </a>
-          <a href="#"><img src="img/look_img2.jpg" alt="">
-            <p>BT21 모브 룩</p>
-            <p>#BT21 #쿠키온탑</p>
-          </a> 
+          <div class="btn_tooltip">
+            <p><span class="tooltip">QR코드를 스캔하거나</span>
+              글씨를 클릭하면<br>카카오톡 오픈링크로 이동합니다.
+            </p>
+          </div>
+        </div>
+      </div>
+    </article>
+    <!-- profile 페이지 -->
+    <article id="profile_pg">
+      <div class="profile">
+        <div class="avatar">
+          <img src="img/아바타.png" alt="">
+        </div>
+        <div class="about">
+          <h2 class="about_title">
+            안녕하세요,<br>
+            매일 성장하는<br>
+            웹 퍼블리셔 서민희 입니다!
+          </h2>
+          <div class="about_text">
+            <p>저는 프론트엔드를 목표로 열심히 공부 중인 웹퍼블리셔 입니다.</p>
+            <p>모든 사람이 사용하기에 편리하고, 효율적인 사이트를 만드는 것이 제가 하는 일이라고 생각합니다.</p>
+            <p>늘 사용자의 입장에서 생각하며, 웹 표준과 웹 접근성을 고려한 마크업을 하기 위해 노력하고 있습니다.</p>
+            <p>더 나은 코드를 작성하기 위해 끊임없이 공부하고 하루하루 더 성장해 나가며 얻는 뿌듯함과 기쁨이 제가 개발을 좋아하는 이유 입니다.</p>
+          </div>
+        </div>
+      </div>
+      <div class="resume">
+        <a href="https://ifh.cc/g/0FHsnK.png" target="_blank">이력서 보러가기</a>
+      </div>
+      <!-- favivoite -->
+      <div class="favivoite"> 
+        <div class="keywords_wrap">
+          <div class="keywords">
+            <img src="img/track1.jpg" alt=""><p>I'm seo minhee</p>
+            <img src="img/track2.jpg" alt=""><p>flexible</p>
+            <img src="img/track3.jpg" alt=""><p>kind</p>
+            <img src="img/track4.jpg" alt=""><p>ambitious</p>
+            <img src="img/track5.jpg" alt=""><p>bright</p>
+            <img src="img/track1.jpg" alt=""><p>I'm seo minhee</p>
+            <img src="img/track2.jpg" alt=""><p>flexible</p>
+            <img src="img/track3.jpg" alt=""><p>kind</p>
+            <img src="img/track4.jpg" alt=""><p>ambitious</p>
+            <img src="img/track5.jpg" alt=""><p>bright</p>
+            <img src="img/track1.jpg" alt=""><p>I'm seo minhee</p>
+            <img src="img/track2.jpg" alt=""><p>flexible</p>
+            <img src="img/track3.jpg" alt=""><p>kind</p>
+            <img src="img/track4.jpg" alt=""><p>ambitious</p>
+            <img src="img/track5.jpg" alt=""><p>bright</p>
+          </div>
+          <div class="keywords">
+            <img src="img/track6.jpg" alt=""><p>positive</p>
+            <img src="img/track7.jpg" alt=""><p>honest</p>
+            <img src="img/track8.jpg" alt=""><p>precise</p>
+            <img src="img/track9.jpg" alt=""><p>modest</p>
+            <img src="img/track10.jpg" alt=""><p>diligent</p>
+            <img src="img/track6.jpg" alt=""><p>positive</p>
+            <img src="img/track7.jpg" alt=""><p>honest</p>
+            <img src="img/track8.jpg" alt=""><p>precise</p>
+            <img src="img/track9.jpg" alt=""><p>modest</p>
+            <img src="img/track10.jpg" alt=""><p>diligent</p>
+            <img src="img/track6.jpg" alt=""><p>positive</p>
+            <img src="img/track7.jpg" alt=""><p>honest</p>
+            <img src="img/track8.jpg" alt=""><p>precise</p>
+            <img src="img/track9.jpg" alt=""><p>modest</p>
+            <img src="img/track10.jpg" alt=""><p>diligent</p>
+            <img src="img/track6.jpg" alt=""><p>positive</p>
+            <img src="img/track7.jpg" alt=""><p>honest</p>
+            <img src="img/track8.jpg" alt=""><p>precise</p>
+            <img src="img/track9.jpg" alt=""><p>modest</p>
+            <img src="img/track10.jpg" alt=""><p>diligent</p>
+          </div>
         </div> 
-        </div>
       </div>
-    </section>
-    <section class="soonjung">
-      <div class="article_title">
-        <img src="img/playwithetude-icon.png" alt="">
-        <p>Soon Jung</p>
-        <p>30년 역사, 저자극 검증</p>
-        <button class="button">View more</button>
-      </div>
-      <!-- title -->
-      <div class="sj_box">
-        <div class="sj_left">
-          <a href="#"><img src="img/EP01_002_main_playwithETUDE.jpg" alt=""></a>
-        </div>
-        <div class="sj_right">
-          <div class="sj_contact">
-            <a href="#"><img src="img/soonjung_img1.jpg" alt=""></a>
-            <p>#비건라이프 #세트</p>
-            <p>지구의 날 순정토너 & 5 시카 밤 비건 기획세트</p>
-            <p>35,000원</p>
-          </div>
-          <div class="sj_contact">
-            <a href="#"><img src="img/soonjung_img2.jpg" alt=""></a>
-            <p>#비건라이프 #약산성</p>
-            <p>지구의 날 순정 약산성 6.5 휩 클렌저 350ml</p>
-            <p>27,000원</p>
-          </div>
-          <div class="sj_contact">
-            <a href="#"><img src="img/soonjung_img3.jpg" alt=""></a>
-            <p>#수분핏 #자차검증</p>
-            <p>순정 디렉터 수분 선크림 SPF50+ PA++++ 50ml</p>
-            <p>25,000</p>
-          </div>
-          <div class="sj_contact">
-            <a href="#"><img src="img/soonjung_img4.jpg" alt=""></a>
-            <p>#무기자차 #자차검증</p>
-            <p>순정 디렉터 무기자차 선크림 SPF50 PA++++ 50ml</p>
-            <p>25,000원</p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="gift_wrap">
-      <div class="gift">
-        <a href="#"><img class="gift_img" src="img/01.jpg" alt=""></a>
-        <div class="tok">톡별</div>
-          <div class="info">
-            <p>[우드스피커 증정!]<br>에뛰드 진저슈가 데이&나이트 립케어 키트(립밤+립마스크+틴트밤)</p>
-            <p>22,000원</p>
-          </div>
-        <a href="#" class="con4_link"><img src="img/link.png" alt=""></a>
-      </div>
-      <div class="gift">
-        <a href="#"><img class="gift_img" src="img/main_forGift_contour_powder.jpg" alt=""></a>
-        <div class="tok">톡별</div>
-          <div class="info">
-            <p>[우드스피커 증정!]<br>에뛰드 조효진 그림자 쉐딩 금손 키트</p>
-            <p>22,000원</p>
-          </div>
-        <a href="#" class="con4_link"><img src="img/link.png" alt=""></a>
-      </div>
-      <div class="gift">
-        <a href="#"><img class="gift_img" src="img/EM01_002_main_forGift_01_kakaoCollection_set.jpg" alt=""></a>
-        <div class="tok">톡별</div>
-          <div class="info">
-            <p>카카오프렌즈 X 에뛰드 플레이 컬러 아이즈<br>(춘식이 탁상 거울 포함 키트)</p>
-            <p>15,400원</p>
-          </div>
-        <a href="#" class="con4_link"><img src="img/link.png" alt=""></a>
-      </div>
-      <div class="gift">
-        <a href="#"><img class="gift_img" src="img/EM01_002_main_forGift_02_soonjungTravel_set.jpg" alt=""></a>
-        <div class="tok">톡별</div>
-        <div class="info">
-          <p>에뛰드 순정 트래블 키트 5종 선물세트</p>
-          <p>12,900원</p>
-        </div>
-        <a href="#" class="con4_link"><img src="img/link.png" alt=""></a>
-      </div> 
-    </section>
-    <section class="sns_wrap">
-      <div class="sns">
-        <div class="sns_bg"></div>
-        <div class="sns_left">
-          <div class="tiktok_top">
-            <p>ETUDE Official|<strong>Ticktok</strong></p>
-            <img class="tiktok_img" src="img/img_main_tiktox_1212.jpg" alt="">
-            <img class="tiktok_img" src="img/play.png" alt="">
-          </div>
-          <div class="tiktok_bottom">
-            <div class="account">
-              <p>FOLLOW US</p>
-              <p><strong>@etude_official</strong></p>
+    </article>
+    <!-- 웹 페이지 -->
+    <article id="web_pg">
+      <div class="web_wrap">
+        <h2 class="por_title">Web Project</h2>
+        <div class="web">
+          <!--프로젝트1 -->
+          <div class="project">
+            <div class="project_img">
+              <img src="img/cgv_목업.png" alt="project1">
             </div>
-          </div>
-        </div>
-        <!-- sns_left end -->
-        <div class="sns_right">
-          <div class="ins1">
-            <a href="#"><img src="img/pngwing.com.png" alt=""></a>
-            <a href="#"><img src="img/pngwing.com (1).png" alt=""></a>
-            <a href="#"><img src="img/pngwing.com (2).png" alt=""></a>
-            <a href="#"><img src="img/pngwing.com (3).png" alt=""></a>
-          </div>
-          <div class="ins2">
-            <p>ETUDE Official|<strong>Instagram</strong></p>
-          </div>
-          <div class="ins3">
-            <swiper-container class="mySwiper" pagination="true">
-              <swiper-slide><a href="#"><img src="img/img1_main_insta_1212.jpg" alt=""></a></swiper-slide>
-              <swiper-slide><a href="#"><img src="img/img2_main_insta_1212.jpg" alt=""></a></swiper-slide>
-              <swiper-slide><a href="#"><img src="img/img3_main_insta_1212.jpg" alt=""></a></swiper-slide>
-              <swiper-slide><a href="#"><img src="img/img4_main_insta_1212.jpg" alt=""></a></swiper-slide>
-            </swiper-container>
+            <div class="project_contens">
+              <dl>
+                <dt>프로젝트명</dt>
+                <dd>CGV</dd>
+                <dt>프로젝트 구성</dt>
+                <dd>웹페이지  main</dd>
+                <dt>프로젝트 참여도</dt>
+                <dd>100%(1인 프로젝트)</dd>
+                <dt>사용 Tool</dt>
+                <dd>Photoshop, Html, CSS, Javascript</dd>
+              </dl>
+              <div class="link">
+                <a href="https://storied-speculoos-b96b6b.netlify.app/">View website</a>
+                <a href="https://www.figma.com/file/1B3k2gUjESb89KpkyAPHGu/cgv-%EC%99%80%EC%9D%B4%EC%96%B4%ED%94%84%EB%A0%88%EC%9E%84?node-id=0-1">Figma wireframes</a>
+              </div>
+            </div>
           </div> 
-        </div>
-      </div>
-    </section>
-  </main>
-  <footer class="footer_wrap">
-    <div class="footer">
-      <div class="f_top">
-        <div class="notice">
-          <p><b>공지</b> <a href="#">[공지]에뛰드 개인정보처리 방침 일부가 변경됩니다.</a></p>
-          <a href="#"><p>더보기 <b>+</b></p></a>
-        </div>
-        <div class="family">
-          <div class="f_Site">
-            <select>
-              <option>Family Site</option>
-              <option>ETUDE GLOBAL MALL</option>
-              <option>JAPAN</option>
-            </select>
-          </div>
-          <div class="Site_map">
-            <select>
-              <option>Site Map</option>
-            </select>
-          </div>
-        </div>
-      </div>
-      <div class="f_center">
-        <ul class="list">
-          <li><a href="#">공지사항</a></li>   
-          <li>|</li>
-          <li><a href="#">이용약관</a></li>
-          <li>|</li>
-          <li><a href="#">전자공고</a></li>
-          <li>|</li>
-          <li><a href="#">개인정보처리방침</a></li>
-          <li>|</li>
-          <li><a href="#">영상정보처리기기 운영⋅관리 방침</a></li>
-        </ul>
-        <div class="address">
-          <div class="left">
-            <a href="#"><img src="img/img_logo03-1.png" alt=""></a>
-            <div class="txt_box">
-              (주)에뛰드 대표이사 : 이수연<br>
-              개인정보보호책임자 : 이수연<br>
-              사업자등록번호 : 135-81-05033<br>
-              주소 : 서울특별시 용산구 한강대로 100 (한강로 2가)
+          <!--프로젝트2 -->
+          <div class="project">
+            <div class="project_img">
+              <img src="img/에뛰드_목업.png" alt="project2">
+            </div>
+            <div class="project_contens">
+              <dl>
+                <dt>프로젝트명</dt>
+                <dd>에뛰드하우스</dd>
+                <dt>프로젝트 구성</dt>
+                <dd>반응형웹 main</dd>
+                <dt>프로젝트 참여도</dt>
+                <dd>100%(1인 프로젝트)</dd>
+                <dt>사용 Tool</dt>
+                <dd>Photoshop, Html, CSS, Javascript</dd>
+              </dl>
+              <div class="link">
+                <a href="https://inspiring-maamoul-917bb6.netlify.app/" target="_blank">View website</a>
+                <a href="https://www.figma.com/file/dOJ7W2d9CCjJvPpA5nJutA/Untitled?node-id=0-1">Figma wireframes</a>
+              </div>
             </div>
           </div>
-          <div class="right">
-            <p><b>CONTAC</b>T</p>
-            <div class="contact">
-            <p class="con_txt">
-              제품 문의 : 080-022-2285<br>
-              고객 문의 : 1544-5418
-            </p>
-            <p class="con_txt">
-              운영 시간 : 평일 13:00 ~ 17:00(주말 및 공휴일 휴무)<br>
-              점심 시간 : 12:00 ~ 13:00
-            </p>
-            <p class="con_txt">
-              대표 이메일 : etude_master@etude.co.kr
-            </p> 
+        </div>
+      </div>
+    </article>
+    <!-- 클론코딩 페이지 -->
+    <article id="clone_pg">
+      <h2 class="por_title">Clone Coding</h2>
+      <ul class="clone_project">
+        <!-- 프로젝트 1 -->
+        <li class="clone_project_list">
+          <a href="https://lighthearted-taffy-5867a2.netlify.app/" target="_blank">
+            <div class="clone_project_list-img">
+              <img src="/img/농촌진흥청.png" alt="">
+            </div>
+            <div class="clone_project_list-hover">
+              <h4>농촌진흥청</h4>
+              <p>#pc and mobile</p>
+              <p>#기여도 90%</p>
+            </div>
+          </a>
+        </li>
+        <!-- 프로젝트 2 -->
+        <li class="clone_project_list">
+          <a href="https://steady-fox-184876.netlify.app/" target="_blank">
+            <div class="clone_project_list-img">
+              <img src="/img/국립광주박물관.png" alt="">
+            </div>
+            <div class="clone_project_list-hover">
+              <h3>국립광주박물관</h3>
+              <p>#pc and mobile</p>
+              <p>#기여도 90%</p>
+            </div>
+          </a>
+        </li>
+        <!-- 프로젝트 3 -->
+        <li class="clone_project_list">
+          <a href="https://symphonious-frangipane-3306a7.netlify.app/" target="_blank">
+            <div class="clone_project_list-img">
+              <img src="/img/뚜레쥬르.png" alt="">
+            </div>
+            <div class="clone_project_list-hover">
+              <h3>뚜레쥬르</h3>
+              <p>#pc</p>
+              <p>#기여도 100%</p>
+            </div>
+          </a>
+        </li>
+        <!-- 프로젝트 4 -->
+        <li class="clone_project_list">
+          <a href="https://subtle-dodol-bbb927.netlify.app/" target="_blank">
+            <div class="clone_project_list-img">
+              <img src="img/도미노피자.png" alt="">
+            </div>
+            <div class="clone_project_list-hover">
+              <h3>도미도피자</h3>
+              <p>#pc</p>
+              <p>#기여도 100%</p>
+            </div>
+          </a>
+        </li> 
+      </ul>
+    </article>
+    <!-- 디자인 페이지 -->
+    <article id="design_pg">
+      <div class="design_wrap"> 
+        <h2 class="por_title">Design</h2> 
+        <div class="design"> 
+          <!-- 상세페이지 -->
+          <div class="detail_wrap">
+            <div class="design_title">01 - 상세페이지</div> 
+            <div class="detail"> 
+              <a href="https://ibb.co/LSHXzMf" target="_blank">
+                <img src="img/detail.png" alt="detail2">
+              </a>
+              <a href="https://ibb.co/yVD6Mng" target="_blank">
+                <img src="https://i.ibb.co/wYTSbNp/detail.png" alt="detail2">
+              </a>
+            </div>
+          </div> 
+          <!-- sns 카드 -->
+          <div class="snscard_wrap"> 
+            <div class="design_title">02 - sns배너 및 기타</div> 
+            <div class="snscard">
+              <!-- https://ko.imgbb.com/ 사용 -->
+              <a href="https://ibb.co/N2ZnTR4"><img src="https://i.ibb.co/60gJXQd/snscard6.png" alt="snscard6" border="0"></a> 
+              <a href="https://ibb.co/4VyQpBk"><img src="https://i.ibb.co/3CXJctK/snscard2.png" alt="snscard2" border="0"></a>
+              <a href="https://ibb.co/3pm1YV1"><img src="https://i.ibb.co/HtT7pR7/snscard1.png" alt="snscard1" border="0"></a>
+              <a href="https://ibb.co/CsPzM3K"><img src="https://i.ibb.co/TqWkbxM/snscard4.png" alt="snscard4" border="0"></a>
+              <a href="https://ibb.co/8YFZz6n"><img src="https://i.ibb.co/QDsw8r7/snscard5.png" alt="snscard5" border="0"></a>
+              <a href="https://ibb.co/TkHmqGW"><img src="https://i.ibb.co/80j64wY/snscard3.png" alt="snscard3" border="0"></a>
+            </div> 
+          </div> 
+          <!-- 축제 포스터 -->
+          <div class="poster_wrap">
+            <div class="design_title">03 - 축제포스터 리디자인</div> 
+            <div class="poster"> 
+              <a href="https://www.figma.com/file/tcr70Fa3rOWgwynfbFfa1P/Untitled?type=design&node-id=0-1">
+                <img src="img/poster.png" alt="">
+              </a>
+              <a href="https://www.figma.com/file/tcr70Fa3rOWgwynfbFfa1P/Untitled?type=design&node-id=0-1">
+                <img src="img/poster_분석.png" alt="">
+              </a>
+            </div>
           </div>
-        </div> 
+        </div>
       </div>
-      <div class="f_bottom">
-        <p>@ETUDE CORPORATION.ALL RIGHTS RESERVED.</p>
-        <ul class="f_icons">
-          <li><a href="#"><img src="img/pngwing.com.png" alt=""></a></li>
-          <li><a href="#"><img src="img/pngwing.com (1).png" alt=""></a></li>
-          <li><a href="#"><img src="img/pngwing.com (2).png" alt=""></a></li>
-          <li><a href="#"><img src="img/pngwing.com (3).png" alt=""></a></li>
-        </ul>
-      </div>
+    </article>
+  </main>
+  <!-- 포터 -->
+  <footer class="footer_pg">
+    <div class="footer">
+      <h2>Thanks for visiting my Website.</h2>
+      <p>본 사이트는 상업용이 아닌 포트폴리오 목적으로 만든 사이트 입니다.<br>
+        Copyright ⓒ 2023. minhee seo All rights reserved.</p>
+    </div>
+    <div class="scroll_top">
+      <a href="#">
+        <img src="http://www.rda.go.kr/inc/2019_rda/images/common/top_btn.png" alt="">
+      </a>
     </div>
   </footer>
 </body>
 </html>
+ 
